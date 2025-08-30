@@ -1,0 +1,26 @@
+node:events:502
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: spawn npx ENOENT
+    at ChildProcess._handle.onexit (node:internal/child_process:285:19)
+    at onErrorNT (node:internal/child_process:483:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+Emitted 'error' event on ChildProcess instance at:
+    at ChildProcess._handle.onexit (node:internal/child_process:291:12)
+    at onErrorNT (node:internal/child_process:483:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'spawn npx',
+  path: 'npx',
+  spawnargs: [
+    'playwright',
+    'test',
+    '--project=chromium',
+    '-g',
+    'homepage title is correct'
+  ]
+}
+
+Node.js v20.19.3
